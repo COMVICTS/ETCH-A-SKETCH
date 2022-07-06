@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+body{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    background: linear-gradient(-45deg, #e2592f, #dd1964, #0faee7, #16d861);
+    background-size: 400% 400%;
+    margin: 0;
+    animation: backgroundGradient 15s ease infinite;
+    width: 100%;
+    height: 95vh;
+    
+}
+
+@keyframes backgroundGradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
+
+#titleText{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-shadow: 4px 4px #000000;
+    animation: titleShadowZoom 3s ease infinite;
+}
+
+@keyframes titleShadowZoom {
+    0% {
+      text-shadow: 1px 1px #000000;
+    }
+    50% {
+      text-shadow: 4px 4px #000000;
+    }
+    100% {
+      text-shadow: 1px 1px #000000;
+    }
+  }
+
+#board{
+    height: 500px;
+    width: 500px;
+    border: solid;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.row{
+    display: flex;
+    flex: 1;
+}
+
+.column{
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    flex: 1;
+
+}
+
+#settings{
+    
+    margin-top: 60px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.resetButton {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #00181f 0, #020c55 100%);
+  border: 2px solid white;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Oswald', sans-serif;
+  height: 40px;
+  width: 80px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.resetButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.resetButton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.resetButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.color1,.color2,.color3{
+    height: 40px;
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+
+}
+
+.color1{
+    background-color: red;
+}
+
+.color2{
+    background-color: green;
+}
+
+.color3{
+    background-color: blue;
+}
+
+.color1:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #460101 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  .color2:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #072b00 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  .color3:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #01083b 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+
+  .golden{
+    border: 2px solid gold;
+
+  }
